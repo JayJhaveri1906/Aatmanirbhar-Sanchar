@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.container h1 {
+  height: 20%;
+  width: 100vw;
+  text-align: center;
+  margin-top: 3.17vh;
+}
+
+.logo {
+  background-image: url("/assets/vesTifrLogo.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100vw;
+}
+
+
+.messagebox-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.messagebox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  --webkit-appearance: none;
+}
+
+.messagebox input {
+  border: none;
+  --webkit-appearance: none;
+  outline: none;
+  background: var(--btnbgd) ;
+  font-size: 18px;
+  padding: 20px 10px 20px 15px;
+  margin-right: 1%;
+  color: var(--txt-color);
+}
+
+.message {
+  /* margin-top: -2vh; */
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px var(--inside-box-shadow-one),
+    inset -8px -8px 8px var(--inside-box-shadow-two);
+  width: 100%;
+  --webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+}
+.message::placeholder{
+  color: var(--txt-color)
+}
+.roomkey {
+  margin-top: 0%;
+  display: flex;
+}
+
+.fieldparent {
+  width: 50%;
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons.bottom {
+  margin-top: 5%;
+}
+
+.modalButton {
+  width: 140px;
+  height: 45px;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: var(--txt-color);
+  background-color: var(--bttn-color);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: 0;
+}
+
+.modalButton:hover {
+  color: var(--txt-color);
+  transform: translateY(-7px);
+}
+
+.modalButton.red {
+  width: 140px;
+  height: 45px;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: red;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: 0;
+}
+
+.modalButton-red:hover {
+  color: var(--txt-color);
+  transform: translateY(-7px);
+}
+
+.modalButtons {
+  display: flex;
+  justify-items: center;
+  margin-top: 15%;
+  justify-content: space-evenly;
+}
+
+.randomize-parent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .fieldparent {
+    width: 90%;
+  }
+
+  .popUpBox {
+    width: 90%;
+  }
+}

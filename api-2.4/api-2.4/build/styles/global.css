@@ -1,0 +1,344 @@
+:root {
+    --main-background: #1e1e1e;
+    --first-box-shadow: #363636;
+    --second-box-shadow: #1a1a1a;
+    --inside-box-shadow-one: #131313;
+    --inside-box-shadow-two: #242424;
+    --txt-color: white;
+    --txt-colorbt: white;
+    --bttn-color: black;
+    --modal-color: #292929;
+    --decrypt-color: rgb(119, 119, 255);
+    --date-color: rgb(139, 139, 139);
+    --grad1: linear-gradient(
+        230deg,
+        hsl(210deg 100% 1%) 0%,
+        hsl(209deg 100% 3%) 2%,
+        hsl(209deg 99% 5%) 9%,
+        hsl(208deg 99% 7%) 26%,
+        hsl(207deg 99% 9%) 47%,
+        hsl(207deg 98% 11%) 60%,
+        hsl(206deg 98% 13%) 69%,
+        hsl(206deg 98% 14%) 76%,
+        hsl(205deg 97% 16%) 81%,
+        hsl(204deg 97% 18%) 85%,
+        hsl(204deg 97% 20%) 88%,
+        hsl(203deg 97% 22%) 91%,
+        hsl(202deg 96% 24%) 93%,
+        hsl(202deg 96% 26%) 95%,
+        hsl(201deg 96% 28%) 96%,
+        hsl(200deg 95% 30%) 97%,
+        hsl(200deg 95% 32%) 98%,
+        hsl(199deg 95% 34%) 99%,
+        hsl(198deg 94% 36%) 100%,
+        hsl(198deg 94% 38%) 100%,
+        hsl(197deg 94% 40%) 100%,
+        hsl(197deg 93% 42%) 100%
+      );
+      --btnbgd: #001D34;
+}
+
+/* light theme*/
+[data-theme='light'] {
+    --main-background: #a0b2bb;
+    --first-box-shadow: #070606;
+    --second-box-shadow: #ffffff;
+    --inside-box-shadow-one: #2b6da7;
+    --inside-box-shadow-two: #0798cf;
+    --txt-color: #2d1c72;
+    --txt-colorbt: #ebebeb;
+    --bttn-color: #2b6da7;
+    --modal-color: #b3b3b3;
+    --decrypt-color: blue;
+    --date-color: rgb(104, 104, 104);
+    --grad1: url(/assets/lightBg.jpg);
+    --btnbgd: #2485C4;
+}
+
+::-webkit-scrollbar {
+    width: 0.45em; /*for vertical scrollbar*/
+    height: 3px; /*for horizontal scrollbar*/
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #888; 
+    margin: 90px 0;
+    border-radius: 25px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(58, 50, 46); 
+  }
+  
+
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--txt-color);
+}
+
+body {
+    /* background-image: url("/assets/brick-wall-dark.png") !important; */
+    background-image: var(--grad1) !important;
+    background: var(--main-background);
+    min-height: 100%;
+    min-width: auto;
+}
+
+h1 {
+    margin-bottom: .5;
+}
+
+/* Classes for buttons */
+
+.button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: var(--txt-colorbt);
+    background-color: var(--bttn-color);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    color: var(--txt-color);
+    transform: translateY(-7px);
+}
+
+.button.send:hover {
+    background-color: #2ee59d;
+    box-shadow: 0 15px 20px 0 rgba(46, 229, 157, 0.4);
+}
+
+.button.github {
+    float: right;
+    z-index: 10000 important;
+    position: relative;
+}
+
+.button.github:hover {
+    background-color: #2e68e5;
+    box-shadow: 0 15px 20px 0 #2e68e5;
+}
+
+.button.legal {
+    float: left;
+    z-index: 10000 important;
+    position: relative;
+}
+
+.button.legal:hover {
+    background-color: #832ee5;
+    box-shadow: 0 15px 20px 0 #832ee5;
+}
+
+.button.leave {
+    z-index: 10000 important;
+    position: relative;
+}
+
+.button.leave:hover {
+    background-color: #ff000d;
+    box-shadow: 0 15px 20px 0 #ff000d;
+}
+
+.button.theme:hover {
+    background-color: #2ee5dc;
+    box-shadow: 0 15px 20px 0 #2ee5dc;
+}
+
+.button.home {
+    float: right;
+}
+
+.button.home:hover {
+    background-color: #ffe550;
+    box-shadow: 0 15px 20px 0 #ffe550;
+}
+
+.button.terms {
+    float: left;
+}
+
+.button.terms:hover {
+    background-color: #ff6a50;
+    box-shadow: 0 15px 20px 0 #ff6a50;
+}
+
+.button.privacy {
+    float: right;
+}
+
+.button.privacy:hover {
+    background-color: #e52ecd;
+    box-shadow: 0 15px 20px 0 #e52ecd;
+}
+
+.button.join {
+    float: right;
+}
+
+.button.join:hover {
+    background-color: #2ee52e;
+    box-shadow: 0 15px 20px 0 #2ee52e;
+    color: var(--bttn-color)
+}
+
+.button.randomize {
+    background: rgb(11, 95, 247);
+    color: white;
+    background: linear-gradient(72deg, rgba(11, 95, 247, 1) 0%, rgba(9, 109, 121, 1) 36%, rgba(31, 9, 121, 1) 100%);
+}
+
+.button.randomize:hover {
+    box-shadow: 0 15px 20px 0 purple;
+    color: white;
+    background: rgb(11, 95, 247);
+}
+
+.iconbutton {
+    /* background: var(--bttn-color); */
+    background: transparent;
+    color: var(--txt-color);
+    border: none;
+    font-size: 36px;
+}
+.copyButton{
+    background: transparent;
+    color: var(--txt-color);
+    border: none;
+    font-size: 1.5em;
+}
+
+.iconbutton.attach {
+    margin-left: 1%;
+}
+
+.iconbutton.emoji {
+    margin-right: 1%;
+}
+
+.iconbutton:hover {
+    cursor: pointer;
+}
+
+.copyButton:hover {
+    cursor: pointer;
+}
+
+/* Loader */
+
+.loader {
+    position: absolute;
+    top: calc(50% - 4em);
+    left: calc(50% - 4em);
+    width: 6em;
+    height: 6em;
+    border: 1.1em solid var(--txt-color);
+    border-left: 1.1em solid var(--bttn-color);
+    border-radius: 50%;
+    animation: load8 1.1s infinite linear;
+    transition: opacity 0.3s;
+}
+
+.loader--hide {
+    opacity: 0;
+}
+
+.overlay {
+    background: black;
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.overlay--hide {
+    display: none;
+}
+
+@keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Classes for Text */
+
+.title.splash {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.decrypt {
+    color: var(--decrypt-color);
+}
+
+.decrypt:hover {
+    cursor: pointer;
+}
+
+.systemmsg {
+    color: rgb(253, 93, 253);
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.icon.users {
+    float: right;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.dateTime {
+    color: var(--date-color);
+    font-size: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+/* Input */
+
+.fileinput {
+    display: none;
+}
+
+.emoji-picker-react input.emoji-search {
+    color: black;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 800px) {
+    .button.randomize {
+        width: 6rem;
+    }
+}

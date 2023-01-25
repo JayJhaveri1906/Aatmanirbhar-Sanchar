@@ -12,7 +12,7 @@ We also developed a sister project, A spinoff if you would, named, [Aatmanirbhar
 ---
 We go in detail about out methodology in our [research paper (in press)](https://www.springer.com/series/16845). [PDF version](https://drive.google.com/file/d/1KJpyONTM6A1bxfSUcixC10NJVbCeEmpR/view?usp=share_link)\
 For a very detailed documentation/ Cookbook of the project, please refer to the following word document:
-[Detailed Cookbook and implementation steps](https://drive.google.com/file/d/1m3vflqOb0wFFrnm7pV5ADmuBpgtcqTOz/view?usp=share_link)
+[Detailed Cookbook and implementation steps](https://docs.google.com/document/d/1fSwpv6ZCRhyami0U6lCNLExHZtTIIsLdNf6ZaCJpGYY/edit?mode=html)
 
 Summarized video:\
 <a href="https://youtu.be/CyNPfndji-U
